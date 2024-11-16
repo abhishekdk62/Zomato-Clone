@@ -1,0 +1,636 @@
+/* Ensure body fills the entire viewport */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  font-family: Okra, Helvetica, sans-serif;
+}
+
+.bgcontainer {
+  height: 60vh; /* Occupy half of the viewport */
+  width: 100%;
+  position: absolute;
+}
+.bgcontainer img {
+  width: 100%; /* Make the image fill the container width */
+  height: 100%; /* Stretch    the image to fill half the screen */
+  object-fit: cover;
+}
+nav {
+  position: relative;
+  padding: 8px 20px;
+  color: white;
+}
+.container {
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+a {
+  color: white;
+}
+.liul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 40px;
+}
+
+.logocontainer {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logocontainer p {
+  padding: 7px;
+  color: white;
+  font-weight: 600;
+}
+.headerlogo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.zomatologo {
+  width: 270px; /* Adjust this value to make the logo smaller */
+}
+.logotext {
+  position: relative;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.liul a{
+  text-decoration: none;
+}
+.headerbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detectlocleft {
+  position: relative;
+  background-color: white;
+  width: 730px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 10px;
+}
+.detectlocleft i {
+  color: rgb(228, 53, 53);
+  font-size: 20px;
+}
+.detectlocleft input {
+  border: black;
+  height: 40px;
+  width: 200px;
+  outline: none;
+  font-size: 16px;
+}
+
+.detectlocright i {
+  color: rgb(157, 147, 147);
+}
+.detectlocright input {
+  height: 40px;
+  width: 350px;
+  outline: none;
+  font-size: 16px;
+}
+
+.line {
+  padding: 5px;
+  font-size: 24px;
+  color: rgb(188, 177, 177);
+}
+
+.ico i {
+  color: rgb(93, 86, 86);
+}
+
+.feature {
+  position: relative;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.feature .container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0;
+  margin-top: 170px;
+  border-radius: 10px;
+}
+
+.featureimg {
+  height: 180px;
+  width: 100%;
+  overflow: hidden;
+}
+.featureimg img {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-position: center -200px; /* Moves the image up by 200px */
+}
+
+.imgtxt {
+  width: 500px;
+}
+h3,
+p {
+  line-height: 0.5;
+  color: rgb(94, 91, 91);
+}
+.imgandtxt {
+  border-radius: 10px;
+}
+
+.imgandtxt:hover {
+  transform: scale(1.04);
+  transition: transform 0.7s;
+  cursor: pointer;
+}
+
+.section-2-top {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding-top: 40px;
+}
+
+.section-2-top-left p {
+  font-weight: 300;
+}
+
+.section-2-top-right p {
+  color: rgb(184, 64, 64);
+}
+
+.section-2-top-right {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: flex-end;
+  margin-top: 60px;
+}
+
+.section-2-middle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.section-2-middle .container1 {
+  margin: 0;
+  width: 267px;
+  height: 330px;
+  background-image: url(zom.avif);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: flex-end;
+  background-size: cover;
+  cursor: pointer;
+
+
+
+}
+.section-2-middle .container2 {
+  margin: 0;
+  width: 267px;
+  height: 330px;
+  background-image: url(zom1.avif);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: flex-end;
+  background-size: cover;
+  cursor: pointer;
+
+
+
+}
+.section-2-middle .container3 {
+  margin: 0;
+  width: 267px;
+  height: 330px;
+  background-image: url(zom2.avif);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: flex-end;
+  background-size: cover;
+  cursor: pointer;
+
+
+
+}
+.section-2-middle .container4 {
+  width: 267px;
+  height: 330px;
+  background-image: url(zom3.avif);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 8px;
+  background-size: cover;
+  cursor: pointer;
+
+}
+
+
+.section-2-middle .txt {
+  font-size: 15px;
+  padding-left: 8px;
+}
+.section-2-middle .txt h3{
+  color: white;
+  text-overflow: ellipsis; /* Adds "..." for overflowed text */
+
+}
+.section-2-middle .txt p{
+  padding: 5px;
+  margin: 0;
+  color: white;
+
+}
+.section-3 {
+  margin-left: 210px;
+  margin-top: 110px;
+}
+
+.section-2-middle .txt h3 {
+  color: white;
+  height: 20px;
+  text-overflow: ellipsis; /* Adds "..." for overflowed text */
+  overflow: hidden; /* Hides any text that overflows */
+  white-space: nowrap; /* Prevents text from wrapping to a new line */
+  font-size: 15px;
+  margin: 0; /* Ensures no default margin affects the layout */
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+}
+
+.section-3-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  width: 320px;
+  height: 50px;
+  border: 2px solid#ebe9e9;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+.see-card {
+  display: flex;
+  width: 320px;
+  height: 50px;
+  border: 2px solid#ebe9e9;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+
+  border-radius: 10px;
+  align-items: center;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.card h3,
+p,
+.see-card h3 {
+  color: black;
+  font-weight: 100;
+}
+
+.imgandtxt {
+  border: 0.01px solid#cfcccc;
+}
+
+.section-4 {
+  margin-left: 300px;
+  margin-top: 150px;
+  display: flex;
+  gap: 30px;
+}
+
+.section-4-left {
+  height: 430px;
+  width: 430px;
+}
+
+.section-4-left img {
+  height: 100%;
+  width: 100%;
+}
+.section-4-right {
+  background-color: rgb(255, 255, 255);
+  width: 500px;
+}
+.section-4 p {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 100;
+}
+
+.section-4 .section-4-right .longtxt {
+  font-size: 40px; /* Example: Change font size */
+  color: rgb(0, 0, 0); /* Example: Change text color */
+  font-weight: bold; /* Example: Make text bold */
+  margin:0;
+}
+.get img{
+  height: 40px;
+  width: 140px;
+  object-fit: contain;
+}
+.get{
+  display: flex;
+  gap: 20px;
+}
+.section-4 .section-4-right .smalltxt {
+  font-size: 14px;
+  color: rgb(96, 92, 92);
+}
+.field{
+  height: 45px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="submit"] {
+
+height: 45px;
+background-color: rgb(231, 74, 74);
+border-radius: 5px;
+border: none;
+font-size: 15px;
+
+color: white;
+width: 130px;
+transition: background-color 0.3s ease;
+           /* Font size */
+}
+
+input[type="submit"]:hover{
+  background-color: rgb(242, 34, 34);
+  
+}
+/* Hide default radio button */
+
+
+.radios{
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+/* Custom radio button style */
+.radios label {
+  position: relative;
+  padding-left: 30px; /* Space for the custom radio button */
+  font-size: 20px;
+  cursor: pointer;
+  gap: 5px;
+  display: flex;
+  flex-direction: col;
+  font-weight: 100;
+}
+
+/* Create a custom circle before the label */
+
+
+input[type="radio"]{
+  accent-color: rgb(229, 73, 73);
+height: 20px;
+width: 20px;}
+/* Change color when radio button is selected */
+
+
+
+.number{
+  height: 100%;
+  width: 280px;
+  border: 2px solid#aca5a5;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  
+}
+.dropdown{
+  border: none;
+  outline: none;
+  padding: 5px;
+  padding-left: 15px;
+}
+input[type="text"] {
+  width: 270px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+.number:focus-within{
+  border: 1px solid#0a82a9;
+}
+
+
+
+.section5
+{
+  width: 70%;
+  margin: auto;
+  color: rgb(36, 35, 35);
+
+
+}
+.section5 h1{
+  color: #504e4e;
+}
+
+.section-5-container{
+  display: flex;
+  flex-direction: column;
+  gap:12px;
+
+}
+.sec-5-small-cont{
+  width: 95%;
+  margin: auto;
+  font-size: 21px;
+  border: 1px solid#c3c0c0;
+  padding: 18px;
+  border-radius: 5px;
+}
+.section-5-container span{
+  float: right;
+  font-size: 15px;
+
+}
+
+.section-6{
+  height: 506px;
+  width: 69%;
+  background-color: #f6f3f3;
+  width: 100%;
+  margin-top: 70px;
+}
+.sec-6-header{
+  height: 42px;
+  display: flex;
+padding:0px 230px;
+padding-top: 60px;
+justify-content: space-between;
+}
+.country-div{
+  height: 28px;
+  border: 1px solid#000;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border-color: #625f5f;
+  padding: 5px;
+  cursor: pointer;
+
+
+}
+
+.country-div .flag{
+  height: 14px;
+  width: 22px;
+}
+.small-div{
+  display: flex;
+  gap: 10px;
+
+}
+.lang-div{
+  display: flex;
+  border: 1px solid#625f5f;
+  border-radius: 5px;
+  align-items: center;
+  padding: 5px;
+  height: 28px;
+  cursor: pointer;
+
+
+}
+.flag img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.section-6{
+  height: auto;
+}
+
+/* Parent container for the logo */
+.sec-6-header .zom-logo {
+  width: 140px; /* Set the width for the parent container */
+  height: auto; /* Allow height to adjust based on content */
+  display: flex; /* Flexbox for proper alignment */
+ 
+}
+
+/* Image inside the parent */
+.sec-6-header .zom-logo img {
+  width: 100%; /* Scale the image to fit the parent width */
+  height: auto; /* Maintain the aspect ratio */
+  object-fit: contain; /* Ensure the image fits inside the container */
+}
+
+
+.credit-section{
+  display: flex;
+  justify-content: space-between;
+  padding:20px 230px;
+  
+}
+.credit-section h3{
+color: #000;
+font-size: 16px;
+
+}
+.credit-section h4{
+  font-size: 15px;
+  color: #9f9c9c;
+  }
+
+.footer{
+  padding: 0 ;
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-line{
+  width: 100%;
+}
+  
+
+.footer p{
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 100;
+  color: #9f9c9c;
+}
+
+.about-section
+{
+ padding: 0;
+ margin: 0;
+ line-height: 0.6;
+
+}
+.lower-content .get{
+  display: flex;
+  flex-direction: column;
+}
+.lower-content .get .app-store{
+  cursor: pointer;
+
+}
+.lower-content .get .google-play{
+  cursor: pointer;
+
+}
+
+.content .upper-content{
+  line-height: 45px;
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  
+}
+.social{
+  cursor: pointer;
+}
+
